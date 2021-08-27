@@ -30,6 +30,13 @@ config :my_app, MyApp.Mailer, adapter: Swoosh.Adapters.Local
 # Swoosh API client is needed for adapters other than SMTP.
 config :swoosh, :api_client, false
 
+config :dart_sass,
+  version: "1.36.0",
+  default: [
+    args: ~w(css:../priv/static/assets),
+    cd: Path.expand("../assets", __DIR__)
+  ]
+
 # Configure esbuild (the version is required)
 config :esbuild,
   version: "0.12.18",
