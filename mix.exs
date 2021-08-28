@@ -44,6 +44,7 @@ defmodule MyApp.MixProject do
       {:phoenix_live_dashboard, "~> 0.5"},
       {:esbuild, "~> 0.2", runtime: Mix.env() == :dev},
       {:dart_sass, "~> 0.1", runtime: Mix.env() == :dev},
+      {:bulma, "0.9.3"},
       {:swoosh, "~> 1.3"},
       {:telemetry_metrics, "~> 0.6"},
       {:telemetry_poller, "~> 1.0"},

@@ -33,7 +33,7 @@ config :swoosh, :api_client, false
 config :dart_sass,
   version: "1.36.0",
   default: [
-    args: ~w(css:../priv/static/assets),
+    args: ~w(--load-path=../deps/bulma css:../priv/static/assets),
     cd: Path.expand("../assets", __DIR__)
   ]
 
